@@ -1,6 +1,7 @@
 class Food{
     constructor(){
-        this.image=loadImage("images/Milk.png");
+        this.image=loadImage("images/milk.png");
+        this.image2=loadImage("images/Food Stock.png");
         this.foodStock=0;
     }
 
@@ -20,9 +21,25 @@ getFoodStock(){
   return this.foodStock;
 }
 
+bedroom(){
+  background(bedroom,800,500);
+}
+
+garden(){
+  background(garden,800,500);
+}
+
+washroom(){
+  background(washroom,800,500);
+}
+
+vaccination(){
+  background(vaccination,800,500);
+}
+
 display(){
   var x=80,y=100;
-console.log(foodStock);
+//console.log(foodStock);
   imageMode(CENTER);
   image(this.image,500,280,70,70);
 
@@ -33,7 +50,7 @@ console.log(foodStock);
         y+=50;
       }
 
-      image(this.image,x,y,50,50);
+      image(this.image2,x,y,50,50);
       x+=30;
     }
   }
